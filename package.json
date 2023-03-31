@@ -1,0 +1,35 @@
+{
+  "name": "async-pool-slim",
+  "version": "1.0.0",
+  "description": "Concurrent execution of asynchronous tasks, with an upper limit specified.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./types/index.d.ts",
+  "files": [
+    "dist",
+    "types"
+  ],
+  "scripts": {
+    "clean": "rimraf ./dist ./types",
+    "build": "tsc",
+    "release": "npm run clean && npm run build && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sakurawaifu/async-pool-slim.git"
+  },
+  "homepage": "https://github.com/sakurawaifu/async-pool-slim",
+  "bugs": {
+    "url": "https://github.com/sakurawaifu/async-pool-slim/issues"
+  },
+  "packageManager": "pnpm@7.29.0",
+  "keywords": [
+    "async",
+    "concurrent"
+  ],
+  "author": "hikali",
+  "license": "MIT",
+  "devDependencies": {
+    "rimraf": "^4.4.1"
+  }
+}
