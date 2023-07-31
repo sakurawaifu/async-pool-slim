@@ -38,4 +38,4 @@ asyncPool([task1, task2], 2)
 
 并发执行异步任务，可指定并发上限。返回一个Promise，所有任务执行完毕后转为 fulfilled 态，value 为undefined。
 
-Task 的声明为 ```() => Promise<any>```。**返回的 Promise 最终应转为 fulfilled 态，其他逻辑请自行在中间处理。**
+Task 的声明为 ```() => Promise<unknown>```。**返回的 Promise 最终应转为 fulfilled 态，其他逻辑请自行在中间处理。**

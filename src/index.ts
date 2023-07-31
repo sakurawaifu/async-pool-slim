@@ -1,4 +1,4 @@
-export type Task = () => Promise<any>
+export type Task = () => Promise<unknown>
 
 const asyncPool = (tasks: Task[], limit: number): Promise<undefined> =>
   new Promise(resolve => {
